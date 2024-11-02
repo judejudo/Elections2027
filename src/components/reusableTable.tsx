@@ -31,14 +31,14 @@ export const ReusableTable: React.FC<TableProps> = ({ headers, data, title, desc
         </div>
         <div className="flex flex-col">
           <div className="font-medium text-black">
-            All users {data.length}
+            All users {data ? data.length : 0}
           </div>
           <Search />
         </div>
       </div>
 
-      <table className="w-full table-auto">
-        <TableHead headers={headers} />
+      <table className="w-full  table-auto">
+        <TableHead  headers={headers} />
         <tbody>
           {data.map((row, index) => (
             <TableRow key={index} row={row} index={index} CommandMenu={CommandMenu} />
@@ -75,13 +75,13 @@ export const ReusableTable: React.FC<TableProps> = ({ headers, data, title, desc
 const TableHead: React.FC<{ headers: string[] }> = ({ headers }) => {
   return (
     <thead>
-      <tr className="text-sm font-normal text-stone-500">
+      <tr className="text-sm font-normal  text-stone-500">
         {headers.map((header, index) => (
-          <th key={index} className="text-start p-1.5">
+          <th key={index} className=" text-center p-1.5">
             {header}
           </th>
         ))}
-        <th className="text-start p-1.5">Actions</th>
+        <th className="text-start p-1.5">View Details</th>
       </tr>
     </thead>
   );

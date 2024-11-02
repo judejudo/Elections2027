@@ -1,0 +1,139 @@
+{
+    "candidates": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "photo": "https://github.com/shadcn.png" ,
+        "position": "Governor",
+        "politicalParty": "Progressive Party",
+        "location": "Nairobi",
+        "content": "Campaign focused on education reform and infrastructure.",
+        "status": "Active"
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "photo": "https://github.com/shadcn.png" ,
+        "position": "Senator",
+        "politicalParty": "Unity Party",
+        "location": "Mombasa",
+        "content": "Environmental advocate and healthcare reform.",
+        "status": "Inactive"
+      },
+      {
+        "id": 3,
+        "name": "Samuel Jackson",
+        "photo": "https://github.com/shadcn.png" ,
+        "position": "Mayor",
+        "politicalParty": "Democratic Alliance",
+        "location": "Kisumu",
+        "content": "Plans to improve city safety and transportation.",
+        "status": "Active"
+      },
+      {
+        "id": 4,
+        "name": "Linda Gates",
+        "photo":"https://github.com/shadcn.png" ,
+        "position": "Councilor",
+        "politicalParty": "People's Voice",
+        "location": "Eldoret",
+        "content": "Focuses on affordable housing and public parks.",
+        "status": "Active"
+      },
+      {
+        "id": 5,
+        "name": "Michael Kimani",
+        "photo": "https://github.com/shadcn.png" ,
+        "position": "Senator",
+        "politicalParty": "Reform Party",
+        "location": "Nakuru",
+        "content": "Campaigns for digital innovation in government services.",
+        "status": "Inactive"
+      }
+    ],
+    "bots": [
+      {
+        "id": 1,
+        "name": "Election Bot",
+        "photo": "https://example.com/photos/bot1.jpg",
+        "description": "Provides real-time election updates and candidate information.",
+        "status": "Running",
+        "created_at": "2023-09-15"
+      },
+      {
+        "id": 2,
+        "name": "Polling Bot",
+        "photo": "https://example.com/photos/bot2.jpg",
+        "description": "Conducts opinion polls and surveys for user engagement.",
+        "status": "Stopped",
+        "created_at": "2023-10-01"
+      },
+      {
+        "id": 3,
+        "name": "Engagement Bot",
+        "photo": "https://example.com/photos/bot3.jpg",
+        "description": "Interacts with users to improve user experience and engagement.",
+        "status": "Running",
+        "created_at": "2023-08-25"
+      },
+      {
+        "id": 4,
+        "name": "Support Bot",
+        "photo": "https://example.com/photos/bot4.jpg",
+        "description": "Assists users with FAQs and support inquiries.",
+        "status": "Maintenance",
+        "created_at": "2023-07-15"
+      },
+      {
+        "id": 5,
+        "name": "Data Analytics Bot",
+        "photo": "https://example.com/photos/bot5.jpg",
+        "description": "Aggregates and analyzes data for campaign insights.",
+        "status": "Stopped",
+        "created_at": "2023-06-10"
+      }
+    ],
+    "users": [
+      {
+        "id": 1,
+        "name": "Alice Johnson",
+        "photo": "https://example.com/photos/alice.jpg",
+        "role": "Admin",
+        "status": "Active",
+        "last_login": "2023-10-20"
+      },
+      {
+        "id": 2,
+        "name": "Bob Marley",
+        "photo": "https://example.com/photos/bob.jpg",
+        "role": "Viewer",
+        "status": "Inactive",
+        "last_login": "2023-09-15"
+      },
+      {
+        "id": 3,
+        "name": "Charlie Doe",
+        "photo": "https://example.com/photos/charlie.jpg",
+        "role": "Editor",
+        "status": "Active",
+        "last_login": "2023-10-18"
+      },
+      {
+        "id": 4,
+        "name": "Daisy Evans",
+        "photo": "https://example.com/photos/daisy.jpg",
+        "role": "Admin",
+        "status": "Active",
+        "last_login": "2023-10-22"
+      },
+      {
+        "id": 5,
+        "name": "Evan Brooks",
+        "photo": "https://example.com/photos/evan.jpg",
+        "role": "Contributor",
+        "status": "Inactive",
+        "last_login": "2023-08-30"
+      }
+    ]
+  }
+  

@@ -1,3 +1,4 @@
+"use client";
 import { Command } from "cmdk";
 import { Dispatch, SetStateAction, useEffect, useState } from "react";
 import { FiEye, FiCheck, FiChevronDown, FiEdit, FiLink, FiLogOut, FiPhone, FiPlus } from "react-icons/fi";
@@ -16,7 +17,7 @@ export const CommandMenuBot = ({
   const [channel, setChannel] = useState("");
   const [language, setLanguage] = useState("");
   const handleSave = () => {
-    // Perform your save logic here, e.g., send the data to an API or update state
+    // Perform your save logic here.
     console.log({
       username,
       bot,
@@ -40,7 +41,7 @@ export const CommandMenuBot = ({
 
         {/* Header */}
         <div className="mb-6">
-          <h3 className="text-lg font-semibold">Edit User Details</h3>
+          <h3 className="text-lg font-semibold">Edit Bot Details</h3>
         </div>
 
         {/* Form */}
@@ -72,53 +73,23 @@ export const CommandMenuBot = ({
               <FiEdit className="text-stone-400 ml-2" />
             </div>
           </div>
-
-          {/* Status */}
-          <div className="flex flex-col">
-            <label className="text-sm text-stone-600">Constituency</label>
-            <div className="flex items-center border p-2 rounded">
-              <select
-                value={status}
-                onChange={(e) => setStatus(e.target.value)}
-                className="flex-1 focus:outline-none appearance-none"
-              >
-                <option value="Active">Active</option>
-                <option value="Inactive">Inactive</option>
-                <option value="Pending">Pending</option>
-              </select>
-              <FiChevronDown className="ml-2 text-stone-400" />
-            </div>
-          </div>
-
+          <div className="mb-6">
+          <h3 className="text-lg font-semibold">Select Bot Webhooks</h3>
+        </div>
+         
           {/* Channel */}
           <div className="flex flex-col">
-            <label className="text-sm text-stone-600">Channel</label>
+            <button  className="text-sm text-stone-600">Channel</button>
             <div className="flex items-center border p-2 rounded">
               <select
                 value={channel}
                 onChange={(e) => setChannel(e.target.value)}
                 className="flex-1 focus:outline-none appearance-none"
               >
-                <option value="General">General</option>
-                <option value="Support">Support</option>
-                <option value="Marketing">Marketing</option>
-              </select>
-              <FiChevronDown className="ml-2 text-stone-400" />
-            </div>
-          </div>
-
-          {/* Language */}
-          <div className="flex flex-col">
-            <label className="text-sm text-stone-600">Language</label>
-            <div className="flex items-center border p-2 rounded">
-              <select
-                value={language}
-                onChange={(e) => setLanguage(e.target.value)}
-                className="flex-1 focus:outline-none appearance-none"
-              >
-                <option value="English">English</option>
-                <option value="French">French</option>
-                <option value="Spanish">Spanish</option>
+                <div className= "p-5"></div>
+                <option value="webhook1">webhook1</option>
+                <option value="webhook2">webhook2</option>
+                <option value="webwook3">Webhook3</option>
               </select>
               <FiChevronDown className="ml-2 text-stone-400" />
             </div>
@@ -131,7 +102,7 @@ export const CommandMenuBot = ({
             className="text-red-500 border border-red-500 px-4 py-2 rounded"
             onClick={() => console.log("Delete user")}
           >
-            Delete user
+            Delete Bot
           </button>
           <div className="flex gap-2">
             <button

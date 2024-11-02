@@ -32,7 +32,7 @@ export const RouteSelect = () => {
       <Route Icon={FiTarget} selected={pathname === "/constituencies"} href="#" title="Constituencies" />
       <Route Icon={FiFlag} selected={pathname === "/wards"} href="#" title="Wards" />
       <Route Icon={FiAward} selected={pathname === "/position"} href="#" title="Position" />
-      <Route Icon={FiUsers} selected={pathname === "/candidates"} href="#" title="Candidates" />
+      <Route Icon={FiUsers} selected={pathname === "/candidates"} href="/candidates" title="Candidates" />
       <Route Icon={FiBriefcase} selected={pathname === "/parties"} href="#" title="Parties" />
       <Route Icon={FiCpu} selected={pathname === "/bots"} href="/bots" title="Bots" />
       <Route Icon={FiBook} selected={pathname === "/subjects"} href="#" title="Subjects" />

@@ -1,6 +1,7 @@
 
 import { CandidatesTable } from '@/components/CandidatesTable';
 import { CommandMenuBot } from '@/components/CommandMenus/CommandMenuBot';
+import UsersModal from '@/components/CommandMenus/UsersModal';
 import { ReusableTable } from '@/components/reusableTable'
 import React from 'react'
 
@@ -26,7 +27,7 @@ export default async function CandidatesPage() {
     let data: CandidatesData[] = [];
 
     try {
-        const res = await fetch('http://localhost:3000/candidates');
+        const res = await fetch('http://localhost:4000/candidates');
         if (!res.ok) throw new Error("Failed to fetch data");
 
         data = await res.json();
@@ -41,7 +42,7 @@ export default async function CandidatesPage() {
                 data={data}
                 title={'Candidates'}
                 description={'The following candidates will be using this platform'}
-                CommandMenu={CommandMenuBot} 
+                CommandMenu={UsersModal} 
             />
         </div>
     );

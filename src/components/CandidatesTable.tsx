@@ -95,9 +95,10 @@ const TableRow: React.FC<TableRowProps> = ({ item, index, CommandMenu }) => {
     const [open, setOpen] = useState(false);
 
     return (
+        
         <tr className={index % 2 ? "bg-stone-300 text-sm text-center" : "text-sm text-center"}>
             <td>{item.id}</td>
-            <td className="">
+            <td >
                 <Avatar>
                     <AvatarImage src={item.photo} alt={item.name} />
                     <AvatarFallback>CN</AvatarFallback>
@@ -118,5 +119,6 @@ const TableRow: React.FC<TableRowProps> = ({ item, index, CommandMenu }) => {
                 <CommandMenu open={open} setOpen={setOpen} />
             </td>
         </tr>
+        
     );
 };

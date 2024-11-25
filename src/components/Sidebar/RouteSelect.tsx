@@ -38,7 +38,7 @@ export const RouteSelect = () => {
       <Route Icon={FiBook} selected={pathname === "/subjects"} href="#" title="Subjects" />
       <Route Icon={FiTag} selected={pathname === "/categories"} href="#" title="Categories" />
       <Route Icon={FiFileText} selected={pathname === "/content-types"} href="#" title="Content Types" />
-      <Route Icon={FiFileText} selected={pathname === "/content"} href="#" title="Content" />
+      <Route Icon={FiFileText} selected={pathname === "/content"} href="/content" title="Content" />
       <Route Icon={FiMessageSquare} selected={pathname === "/user-messages"} href="#" title="User Messages" />
       <Route Icon={FiCreditCard} selected={pathname === "/accounts"} href="#" title="Accounts" />
       <Route Icon={FiBarChart2} selected={pathname === "/analytics"} href="#" title="Analytics" />
